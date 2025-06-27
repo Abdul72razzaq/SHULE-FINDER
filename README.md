@@ -1,34 +1,44 @@
-# SHULE FINDER
+# SHULE-FINDER
 
 ## Project Name & Description
-**Shule Finder** is a web-based platform that allows parents and guardians in Kenya to easily search, compare, and review schools across the country. It addresses the problem of limited, scattered, or outdated school information by providing a centralized database with categories, reviews, photos, and school performance data.
+
+**Shule Finder** is a web-based platform that helps parents and guardians in Kenya discover and compare schools for their children. It addresses the lack of centralized, reliable school information by providing categorized listings, parent reviews, and search filters by location, fees, and performance.
+
+---
 
 ## Target Users
-- **Parents and Guardians** looking for trustworthy school information
-- **Schools** seeking visibility and enrollment growth
-- **Education Consultants** who want to recommend schools more effectively
 
-## How to Run the Project
-> On web.
+* Parents and guardians seeking transparent school information
+* Schools looking to improve visibility and reputation
 
-To run locally:
-1. Download or clone the repository.
-2. Open `index.html` in any modern web browser.
-3. (Future) For full functionality (form submission and school page auto-generation), connect to a  backend.
+---
 
-## Your Name + GitHub Handle
-**Name**: Abdulrazzaq Salmini  
-**GitHub**: [@abdulrazzaqSalmini](https://github.com/Abdul72razzaq)
+
+
+## Developer
+
+**Name:** Abdulrazzaq Mohammed Salimini
+**GitHub Handle:** [@abdul72razzaq](https://github.com/abdul72razzaq)
+
+---
 
 ## Project Timeline (Milestones)
-| Week | Milestone |
-|------|-----------|
-| Week 1 | Market research and user survey |
-| Week 2 | Design and build landing page layout |
-| Week 3 | School registration form and data handling |
-| Week 4 | Auto-generate school profile pages |
-| Week 5 | Implement filtering and review system |
-| Week 6 | Final testing, polish, and submission |
+
+* ✅ Week 1: Market research and competitor benchmarking
+* ✅ Week 2: Surveys, interviews, and data analysis
+* ✅ Week 3: Project repository initialization and README creation
+* ✅ Week 4: Design of landing page and form interface
+* 🔄 Week 5: Implementation of school registration form and dynamic page generation
+* 🔄 Week 6: MongoDB integration and backend development
+* 🔜 Week 7: User authentication and review system implementation
+* 🔜 Week 8: Testing, debugging, and performance tuning
+* 🔜 Week 9: Final presentation preparation and deployment
+
+---
 
 ## Link to Project Board
-[Click to view GitHub Project Board](https://github.com/Abdul72razzaq/shule-finder/projects)
+
+🔗 [GitHub Project Board]
+https://github.com/Abdul72razzaq/SHULE-FINDER/projects?query=is%3Aopen
+
+---
