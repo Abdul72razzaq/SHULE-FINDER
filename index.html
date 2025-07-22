@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFarm Pro - Revolutionary Greenhouse Automation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>SmartFarm Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#dashboard">Live Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Revolutionary <span class="highlight">Smart Farming</span> for Modern Greenhouses
+                </h1>
+                <p class="hero-description">
+                    Transform your greenhouse into an intelligent ecosystem with our Arduino-powered IoT device. 
+                    Automated irrigation, climate control, and real-time monitoring - all in one compact solution.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('features')">
+                        <i class="fas fa-rocket"></i>
+                        Explore Features
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('dashboard')">
+                        <i class="fas fa-eye"></i>
+                        View Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="device-preview">
+                    <div class="lcd-display">
+                        <div class="lcd-content">
+                            <div class="lcd-line">T:25.2°C S:380</div>
+                            <div class="lcd-line">L:450</div>
+                        </div>
+                    </div>
+                    <div class="arduino-board"></div>
+                    <div class="sensors">
+                        <div class="sensor sensor-temp"></div>
+                        <div class="sensor sensor-soil"></div>
+                        <div class="sensor sensor-light"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-icon" style="top: 20%; left: 10%;">🌱</div>
+            <div class="floating-icon" style="top: 60%; right: 15%;">💧</div>
+            <div class="floating-icon" style="bottom: 30%; left: 20%;">☀️</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Smart Features That Work Around the Clock</h2>
+            <p class="section-subtitle">Our intelligent system monitors and controls your greenhouse environment automatically</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>Temperature Control</h3>
+                    <p>Precise temperature monitoring with LM35 sensor. Automatic cooling fan activation when temperature exceeds 30°C to maintain optimal growing conditions.</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Sensor:</span>
+                        <span class="detail-value">LM35 (±0.5°C accuracy)</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Smart Irrigation</h3>
+                    <p>Soil moisture detection with automatic watering system. Pump activates when soil moisture drops below optimal levels (400 units).</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Trigger:</span>
+                        <span class="detail-value">Moisture < 400 units</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Light Management</h3>
+                    <p>Photoresistor-based light sensing with automated curtain control. Opens curtains when light levels drop below 300 units for optimal photosynthesis.</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Threshold:</span>
+                        <span class="detail-value">Light < 300 units</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Real-time Display</h3>
+                    <p>16x2 LCD screen shows live sensor readings. Clear display of temperature, soil moisture, and light levels updated every 3 seconds.</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Update Rate:</span>
+                        <span class="detail-value">Every 3 seconds</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Automated Control</h3>
+                    <p>Three independent actuators control irrigation pump, cooling fan, and curtain motor based on real-time sensor feedback.</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Outputs:</span>
+                        <span class="detail-value">3 Digital pins (5V)</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Serial Monitoring</h3>
+                    <p>Debug and monitor system performance through serial communication. Track all sensor readings and system decisions in real-time.</p>
+                    <div class="feature-detail">
+                        <span class="detail-label">Baud Rate:</span>
+                        <span class="detail-value">9600 bps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specs" class="specifications">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-container">
+                <div class="specs-category">
+                    <h3><i class="fas fa-microchip"></i> Hardware</h3>
+                    <ul>
+                        <li><strong>Controller:</strong> Arduino Compatible Board</li>
+                        <li><strong>Display:</strong> 16x2 LCD with I2C Interface</li>
+                        <li><strong>Power Supply:</strong> 5V DC</li>
+                        <li><strong>Operating Temperature:</strong> -10°C to 60°C</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-category">
+                    <h3><i class="fas fa-search-plus"></i> Sensors</h3>
+                    <ul>
+                        <li><strong>Temperature:</strong> LM35 (A1) - 0°C to 100°C</li>
+                        <li><strong>Soil Moisture:</strong> Capacitive (A0) - 0-1023 units</li>
+                        <li><strong>Light:</strong> Photoresistor (A2) - 0-1023 units</li>
+                        <li><strong>Accuracy:</strong> ±0.5°C temp, ±5% moisture</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-category">
+                    <h3><i class="fas fa-plug"></i> Outputs</h3>
+                    <ul>
+                        <li><strong>Water Pump:</strong> Digital Pin 7 (5V)</li>
+                        <li><strong>Cooling Fan:</strong> Digital Pin 6 (5V)</li>
+                        <li><strong>Curtain Motor:</strong> Digital Pin 5 (5V)</li>
+                        <li><strong>Max Current:</strong> 40mA per pin</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-category">
+                    <h3><i class="fas fa-clock"></i> Performance</h3>
+                    <ul>
+                        <li><strong>Response Time:</strong> < 3 seconds</li>
+                        <li><strong>Update Frequency:</strong> Every 3 seconds</li>
+                        <li><strong>Serial Rate:</strong> 9600 baud</li>
+                        <li><strong>Memory Usage:</strong> ~2KB Flash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Dashboard Demo -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <h2 class="section-title">Live System Dashboard</h2>
+            <p class="section-subtitle">Experience real-time monitoring and control</p>
+            
+            <div class="dashboard-grid">
+                <div class="sensor-panel">
+                    <h3><i class="fas fa-thermometer-half"></i> Temperature</h3>
+                    <div class="sensor-value">
+                        <span id="temp-value">25.2</span>°C
+                    </div>
+                    <div class="sensor-status" id="temp-status">Normal Range</div>
+                    <div class="threshold">Cooling at: >30°C</div>
+                </div>
+                
+                <div class="sensor-panel">
+                    <h3><i class="fas fa-tint"></i> Soil Moisture</h3>
+                    <div class="sensor-value">
+                        <span id="soil-value">380</span> units
+                    </div>
+                    <div class="sensor-status" id="soil-status">Adequate</div>
+                    <div class="threshold">Irrigation at: <400</div>
+                </div>
+                
+                <div class="sensor-panel">
+                    <h3><i class="fas fa-sun"></i> Light Level</h3>
+                    <div class="sensor-value">
+                        <span id="light-value">450</span> units
+                    </div>
+                    <div class="sensor-status" id="light-status">Bright</div>
+                    <div class="threshold">Curtain opens: <300</div>
+                </div>
+            </div>
+            
+            <div class="actuator-status">
+                <h3>System Status</h3>
+                <div class="actuator-grid">
+                    <div class="actuator-item" id="pump-status">
+                        <i class="fas fa-faucet"></i>
+                        <span>Water Pump</span>
+                        <div class="status-indicator off"></div>
+                    </div>
+                    <div class="actuator-item" id="fan-status">
+                        <i class="fas fa-fan"></i>
+                        <span>Cooling Fan</span>
+                        <div class="status-indicator off"></div>
+                    </div>
+                    <div class="actuator-item" id="curtain-status">
+                        <i class="fas fa-window-maximize"></i>
+                        <span>Curtain Motor</span>
+                        <div class="status-indicator off"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Greenhouse?</h2>
+            <p class="section-subtitle">Get in touch to learn more about SmartFarm Pro</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@smartfarmpro.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Agriculture Technology Center<br>Innovation District</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Greenhouse Size (sq ft)">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Tell us about your greenhouse automation needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>SmartFarm Pro</span>
+                </div>
+                <p>&copy; 2024 SmartFarm Pro. Revolutionizing agriculture through intelligent automation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
