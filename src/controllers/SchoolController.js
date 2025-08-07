@@ -1,6 +1,6 @@
 import School from '../models/schools.js'; // Assuming you have a School model defined
 
-// 🏫 Get all schools
+//  Get all schools
 export async function getAllSchools(req, res) {
   try {
     const schools = await School.find(); // Fetch all schools from the database
@@ -10,7 +10,7 @@ export async function getAllSchools(req, res) {
   }
 }
 
-// 🏗️ Create a new school
+// 🏗 Create a new school
 export async function createSchool(req, res) {
   const { name, category, location, address, phone, email, website, shortDescription, longDescription } = req.body;
 
@@ -34,7 +34,7 @@ export async function createSchool(req, res) {
   }
 }
 
-// 🛠️ Update school data
+// 🛠 Update school data
 export async function updateSchool(req, res) {
   const { id } = req.params; // Get the school ID from the request parameters
   const updates = req.body; // Get the updates from the request body
@@ -50,7 +50,7 @@ export async function updateSchool(req, res) {
   }
 }
 
-// 🗑️ Delete a school
+// 🗑 Delete a school
 export async function deleteSchool(req, res) {
   const { id } = req.params; // Get the school ID from the request parameters
 
@@ -64,3 +64,4 @@ export async function deleteSchool(req, res) {
     res.status(500).json({ message: "Error deleting school", error: error.message });
   }
 }
+
