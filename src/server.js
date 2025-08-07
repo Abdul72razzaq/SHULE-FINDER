@@ -18,5 +18,3 @@ app.use("/api/schools",schoolroutes);
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-//2l8e5ZtxQCcmM9hx
-//mongodb+srv://abdulrazzaqsalmini:2l8e5ZtxQCcmM9hx@cluster0.qyhli7a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
